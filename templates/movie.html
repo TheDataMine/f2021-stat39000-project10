@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>{{ movie.primary_title }}</title>
+  </head>
+  <body>
+    <h1>{{ movie.primary_title }}</h1>
+    <h2>Facts:</h2>
+
+    <h2>Genres:</h2>
+    <ul>
+        {% for genre in movie.genres %}
+            <li>{{ genre.genre }}</li>
+        {% endfor %}
+    </ul>
+  </body>
+</html>

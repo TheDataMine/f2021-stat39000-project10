@@ -18,6 +18,11 @@ class EmptyStrToNone(str):
         yield empty_to_none
         
 
+class HelloWorld(BaseModel):
+    hello_item: str
+    world_item: str
+
+
 class AKA(BaseModel):
     title_id: str
     title: str
